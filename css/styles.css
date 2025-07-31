@@ -16,26 +16,29 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   background-color: var(--color-primary);
   color: var(--color-white);
   overflow-x: hidden;
 }
-header {
+
+/* Styles to header */
+/* header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   padding: 2rem;
 }
-nav {
-  margin-top: 1rem;
-}
+
 nav a {
   color: var(--color-white);
   margin: 0 1rem;
   text-decoration: none;
-}
+} */
+
+/* Styles to hero */
 .hero {
   display: flex;
   flex-direction: column;
@@ -43,17 +46,20 @@ nav a {
   text-align: center;
   padding: 4rem 2rem;
 }
+
 .hero h1 {
   font-size: 3rem;
   color: var(--color-muted);
   animation: fadeInDown 1s ease-out;
 }
+
 .hero p {
   color: #f0f0f0;
   max-width: 400px;
   margin: 1rem 0;
   animation: fadeInUp 1s ease-out;
 }
+
 .hero button {
   width: 200px;
   color: #fff;
@@ -64,6 +70,8 @@ nav a {
   margin-top: 1rem;
   animation: fadeIn 2s ease-in-out;
 }
+
+/* Styles to skills */
 .section-title {
   font-size: 2rem;
   color: #ff4b5c;
