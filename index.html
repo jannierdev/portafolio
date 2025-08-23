@@ -9,7 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/globals.css" />
   </head>
   <body>
     <!-- Section Header -->
@@ -21,81 +22,118 @@
         <span class="bar"></span>
       </button>
       <nav>
-        <a href="#">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
+        <a href="#">Inicio</a>
+        <!-- <a href="#about">Sobre mí</a> -->
+        <a href="#skills">Habilidades</a>
+        <a href="#portfolio">Portafolio</a>
+        <a href="#contact">Contacto</a>
       </nav>
     </header>
 
     <!-- Section Hero -->
-    <section class="hero">
-      <div class="container">
-        <h1>
-          Hello, I'm<br /><span style="color: #fff">a Front end Developer</span>
-        </h1>
-        <p>
-          Fond of creating web application designs and bring them to life using
-          code & develop mobile designs
-        </p>
-        <div class="buttons">
-          <button class="btn-primary">Descargar CV</button>
-          <button class="btn-danger">Hablemos</button>
+    <section class="container hero">
+      <section class="profile-section">
+        <div class="avatar-wrapper">
+          <img src="assets/images/avatar.jpg" alt="Mi foto" class="avatar" />
         </div>
+      </section>
+      <h1>
+        Hola, Soy<br /><span style="color: #fff">Desarrollador Full Stack</span>
+      </h1>
+      <p>
+        Me apasiona crear diseños de aplicaciones web y darles vida mediante
+        código, así como desarrollar interfaces móviles atractivas. Además,
+        disfruto trabajar como desarrollador Full Stack, construyendo tanto la
+        experiencia de usuario en el frontend como la lógica, APIs y bases de
+        datos en el backend para entregar soluciones completas y escalables.
+      </p>
+      <div class="buttons">
+        <button class="btn-primary">Descargar CV</button>
+        <button class="btn-danger">Hablemos</button>
       </div>
     </section>
 
     <!-- Section Skills -->
-    <section class="container" id="skills">
-      <h2 class="section-title">Skill-Set</h2>
-      <div class="skills">
+    <section class="skills container" id="skills">
+      <h2 class="section-title">Mis Habilidades</h2>
+      <div class="skills-items">
         <div class="card">
-          <h3>Git Version Control</h3>
+          <h3 class="text-center">Manejo de Git</h3>
           <p>
             Experiencia en el manejo de Git y GitHub para control de versiones,
             trabajo colaborativo y flujos de desarrollo eficientes.
           </p>
         </div>
         <div class="card">
-          <h3>App Design</h3>
-          <p>
-            Diseño de interfaces modernas y usables, priorizando la experiencia
-            del usuario y la identidad visual del proyecto.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Back-end Development</h3>
+          <h3 class="text-center">Desarrollo Backend</h3>
           <p>
             Desarrollo de APIs y servicios escalables, aplicando buenas
             prácticas de arquitectura.
           </p>
         </div>
         <div class="card">
-          <h3>Web Development</h3>
+          <h3 class="text-center">Desarrollo Frontend</h3>
           <p>
             Construcción de sitios y aplicaciones web responsivas, rápidas y
             optimizadas para cualquier dispositivo.
           </p>
         </div>
-        <div class="card">
-          <h3>Freelancing</h3>
-          <p>
-            Gestión de proyectos de forma independiente, asegurando comunicación
-            clara, cumplimiento de plazos y entrega de calidad.
-          </p>
+      </div>
+    </section>
+
+    <!-- Section Portfolio -->
+    <section id="portfolio" class="portfolio container">
+      <h2 class="section-title">Mi Portafolio</h2>
+      <p class="section-subtitle">
+        Algunos proyectos en los que he trabajado recientemente 🚀
+      </p>
+
+      <div class="portfolio-grid">
+        <!-- Card 1 -->
+        <div class="portfolio-card">
+          <img src="img/proyecto1.png" alt="Proyecto 1" />
+          <div class="card-content">
+            <h3>App de Finanzas</h3>
+            <p>
+              Aplicación web para gestión de gastos y análisis financiero en
+              tiempo real.
+            </p>
+            <span class="tech">Angular • Node.js • PostgreSQL</span>
+            <div class="card-buttons">
+              <a href="#" class="btn-primary">Ver Demo</a>
+              <a href="#" class="btn-outline">Ver Código</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="portfolio-card">
+          <img src="img/proyecto2.png" alt="Proyecto 2" />
+          <div class="card-content">
+            <h3>Plataforma Educativa</h3>
+            <p>
+              Plataforma virtual que conecta estudiantes con universidades y
+              carreras.
+            </p>
+            <span class="tech">React • Express • MongoDB</span>
+            <div class="card-buttons">
+              <a href="#" class="btn-primary">Ver Demo</a>
+              <a href="#" class="btn-outline">Ver Código</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Section Contact -->
-    <section id="contact" class="contact container">
-      <h2 class="section-title">Connect with me</h2>
-      <input type="email" placeholder="Email" />
-      <textarea placeholder="Message"></textarea>
-      <button>Stay Connected</button>
-    </section>
+    <div class="container">
+      <section id="contact" class="contact">
+        <h2 class="section-title">Dejame un mensaje</h2>
+        <input type="email" placeholder="Email" />
+        <textarea placeholder="Mensaje"></textarea>
+        <button>Enviar mensaje</button>
+      </section>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
     <script>

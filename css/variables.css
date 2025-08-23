@@ -1,0 +1,11 @@
+:root {
+  --color-primary: #121428;
+  --color-white: #ffffff;
+  --color-accent: #ff4b5c; /* Rojo principal */
+  --color-accent-hover: #ff2e45;
+  --color-secondary: #5247f3; /* Violeta neón */
+  --color-secondary-hover: #8f5ce2;
+  --color-muted: #f0f0f0; /* Texto suave */
+  --color-card: #1f2235; /* Fondo tarjetas */
+  --color-placeholder: #a0a3bd; /* Placeholder inputs */
+}

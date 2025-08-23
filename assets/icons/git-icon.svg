@@ -1,0 +1,11 @@
+<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+     stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+     aria-label="Git">
+  <!-- nodos -->
+  <circle cx="6" cy="4" r="2"></circle>
+  <circle cx="6" cy="12" r="2"></circle>
+  <circle cx="18" cy="8" r="2"></circle>
+  <!-- ramas -->
+  <path d="M6 6v4a4 4 0 0 0 4 4h3"></path>
+  <path d="M10 10l6-2"></path>
+</svg>
