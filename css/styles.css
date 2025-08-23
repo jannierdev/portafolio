@@ -83,7 +83,7 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 999;
 }
 
 /* Contenedor del avatar */
@@ -335,6 +335,12 @@ nav a {
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
+  header {
+    /* background: var(--color-primary); */
+    position: fixed;
+    margin-bottom: 50px;
+  }
+
   .menu-toggle {
     display: flex;
   }
@@ -369,5 +375,9 @@ nav a {
 
   .menu-toggle.active .bar:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .hero {
+    padding-top: 120px;
   }
 }
