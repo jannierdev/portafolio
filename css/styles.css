@@ -261,7 +261,7 @@ nav a {
 }
 
 .card-content p {
-  font-size: 0.95rem;
+  /* font-size: 0.95rem; */
   margin-bottom: 1rem;
   /* color: var(--color-muted); */
 }
@@ -378,10 +378,22 @@ nav a {
   }
 
   .hero {
-    padding: 2rem 1rem;
+    padding: 2rem 0.5rem;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 13px;
   }
 
   .hero .profile-section {
     margin-top: 80px;
+  }
+
+  .section-title {
+    font-size: 28px;
   }
 }

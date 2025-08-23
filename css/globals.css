@@ -36,3 +36,9 @@
   text-decoration: none;
   position: relative;
 }
+
+@media (max-width: 768px) {
+  .button {
+    width: 160px;
+  }
+}
