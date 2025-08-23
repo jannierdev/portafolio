@@ -336,7 +336,7 @@ nav a {
 /* --- Responsive --- */
 @media (max-width: 768px) {
   header {
-    /* background: var(--color-primary); */
+    background: var(--color-primary);
     position: fixed;
     margin-bottom: 50px;
   }
@@ -378,6 +378,10 @@ nav a {
   }
 
   .hero {
-    padding-top: 120px;
+    padding: 2rem 1rem;
+  }
+
+  .hero .profile-section {
+    margin-top: 80px;
   }
 }
