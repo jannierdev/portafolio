@@ -234,10 +234,14 @@ nav a {
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
+  z-index: 9999;
 }
 
 .portfolio-card:hover {
   transform: translateY(-8px);
+  background: var(--color-white);
+  color: var(--color-card);
+  z-index: 9999;
 }
 
 .portfolio-card img {
@@ -259,14 +263,14 @@ nav a {
 .card-content p {
   font-size: 0.95rem;
   margin-bottom: 1rem;
-  color: var(--color-muted);
+  /* color: var(--color-muted); */
 }
 
 .card-content .tech {
   display: block;
   font-size: 0.85rem;
   margin-bottom: 1rem;
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
   font-weight: bold;
 }
 
@@ -310,7 +314,7 @@ nav a {
 
 /* Styles to contact */
 .contact {
-  max-width: 50vw;
+  max-width: 600px;
   width: 100%;
   padding: 2rem;
   display: flex;
@@ -365,11 +369,5 @@ nav a {
 
   .menu-toggle.active .bar:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
-  }
-
-  @media (max-width: 768px) {
-    .portfolio-card {
-      min-width: 100%; /* 1 card en móviles */
-    }
   }
 }
